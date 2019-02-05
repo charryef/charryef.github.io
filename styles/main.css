@@ -2,7 +2,7 @@ body {
   padding-bottom: 5rem;
 }
 
-header {
+header#portfolio-header {
   background: url(../images/gothic.jpg) center / cover;
   height: 60vh;
   justify-content: center;
