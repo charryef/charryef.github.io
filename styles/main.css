@@ -1,53 +1,232 @@
-body {
+/* body {
+  background: url(../images/clock-coder.jpg) center / cover;
   padding-bottom: 5rem;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-header#portfolio-header {
-  background: url(../images/gothic.jpg) center / cover;
-  height: 60vh;
-  justify-content: center;
-  text-align: center;
-  background-size: 100% 100%
+html, body {
+  width: 100%;
+  height: 100%;
 }
 
-h1 {
-  color: hsla(0, 0%, 100%, 0.9);
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/clock-coder.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-y: auto;
+}
+
+.nav {
+  width: 350px;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  font-family: verdana;
   font-weight: bold;
+  height: 90px;
+  margin: 5px 0;
+  float: left;
+  display: inline-block;
+  background-color: black;
+  line-height: 90px;
+  text-align: center;
+  transition: 300ms;
 }
 
-.slogan {
-  color: hsla(0, 0%, 100%, 0.7);
-  font-weight: lighter;
-  font-size: 1.6rem;
+a {
+  color: #1a237e;
+  text-decoration: none;
 }
 
-main {
-  max-width: 900px;
-}
-
-.project-description {
-  padding-left: 0;
-}
-
-.project img {
+a.active, .nav a:hover {
+  background-color: white;
+  color: black;
   width: 100%;
 }
 
-footer.mdl-mini-footer {
+.a {
+  width: 95%;
+}
+
+.b {
+  width: 85%;
+}
+
+.c {
+  width: 80%;
+}
+
+.d {
+  width: 90%;
+}
+
+.content {
+  position: absolute;
+  width: 1100px;
+  min-height: 500px;
+  height: auto;
+  right: 20px;
+  top: 10%;
+}
+
+.home {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  color: white;
+  font-family: verdana;
+}
+
+.home h1 {
+  font-size: 80px;
+  padding-right: 90px;
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
+}
+
+.home h3 {
+  font-size: 28px;
+  padding: 1px 0;
+  opacity: 0.6;
+}
+
+.aboutme {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  color: white;
+  font-family: century gothic;
+  padding: 60px;
+  display: none;
+}
+
+.aboutme p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 15px;
+  width: 75%;
+  text-align: justify;
+}
+
+.aboutme img {
+  padding-left: 20px;
+  img-align: center;
+  border-radius: 10px;
+  float: right;
+}
+
+.aboutme a {
+  text-decoration: none;
+}
+
+.projects {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 60px;
+  display: none;
+  font-size: 20px;
+}
+
+.projects .image {
+  margin: 1%;
+  float: left;
+}
+
+.image img {
+  width: 600px;
+  height: 250px;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+.image img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+
+.projectstitle {
+  color: white;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+.projects h2 {
+  color: white;
+}
+
+.projects p {
+  color: #cfd8dc;
+}
+
+.projectstitle h4 {
+  opacity: 0.6;
+}
+
+.contactme {
+  position: absolute;
+  right: 500px;
+  top: 160px;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-family: century gothic;
+  display: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+.contactme li {
+  list-style: none;
+}
+
+.contactme ul {
+  padding-top: 20px;
+}
+
+.contactme a {
+  text-decoration: none;
+}
+
+.fa {
+  font-size: 40px;
+}
+
+.title {
+  padding-left: 20px;
+}
+
+footer {
   bottom: 0;
   padding: 0.5rem;
   position: fixed;
   width: 100%;
   z-index: 1;
+  text-align: center;
+  background-color: #263238;
 }
 
-footer.mdl-mini-footer > ul {
+footer > ul {
   margin: auto;
   font-size: 2rem;
 }
 
-@media screen and (max-width: 1024px) {
-  header.mdl-layout__header {
-    display: flex;
-  }
+footer li {
+  display: inline;
 }
