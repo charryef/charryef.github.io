@@ -115,7 +115,7 @@
   <script type="text/javascript">
 
     $(document).ready(function( ){
-      $('a').click(function(){
+      $('a').on('click', function(){
         var selected = $(this);
         $('a').removeClass('active');
         $(selected).addClass('active');
@@ -130,25 +130,25 @@
       $projects = $('.projects'),
       $contactme = $('.contactme');
 
-      $a.click(function(){
+      $a.on('click', function(){
         $home.fadeIn();
         $aboutme.fadeOut();
         $projects.fadeOut();
         $contactme.fadeOut();
       });
-      $b.click(function(){
+      $b.on('click', function(){
         $aboutme.fadeIn();
         $home.fadeOut();
         $projects.fadeOut();
         $contactme.fadeOut();
       });
-      $c.click(function(){
+      $c.on('click', function(){
         $projects.fadeIn();
         $home.fadeOut();
         $aboutme.fadeOut();
         $contactme.fadeOut();
       });
-      $d.click(function(){
+      $d.on('click', function(){
         $contactme.fadeIn();
         $home.fadeOut();
         $aboutme.fadeOut();
