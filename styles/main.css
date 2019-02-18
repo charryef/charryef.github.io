@@ -100,7 +100,7 @@ nav a.active, .nav a:hover {
 }
 
 .aboutme {
-  position: absolute;
+  position: relative;
   right: 0;
   top: 10px;
   color: white;
