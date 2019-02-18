@@ -6,18 +6,14 @@
 html, body {
   width: 100%;
   height: 100%;
-}
-
-@media screen and (max-width: 480px) {
-    body {
-        overflow-y: scroll;
-    }
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .background {
   width: 100%;
   height: 100%;
-  background-image: url(../images/clock-coder.jpg);
+  background-image: url(../images/clock-coder.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -25,7 +21,7 @@ html, body {
 }
 
 .nav {
-  width: 350px;
+  width: 250px;
   height: auto;
   position: absolute;
   top: 20%;
@@ -53,7 +49,7 @@ a {
   text-decoration: none;
 }
 
-nav a.active, .nav a:hover {
+.nav > a.active, .nav a:hover {
   background-color: white;
   color: black;
   width: 100%;
