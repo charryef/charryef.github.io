@@ -30,6 +30,10 @@ body{
   margin-top: 6px;
 }
 
+#aboutMe a:hover{
+  color: #fafafa;
+}
+
 #projects span{
   padding: 10px 20px 10px 20px;
 }
@@ -54,4 +58,8 @@ body{
 
 #footer .fa{
   color: #fafafa;
+}
+
+a, a:link, a:visited, a:active, a:hover{
+  text-decoration: none;
 }
