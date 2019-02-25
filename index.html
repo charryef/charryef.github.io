@@ -1,179 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-   <!-- Font awesome -->
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Font awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles/main.css">
 
-   <!-- Custom Styles -->
-   <link rel="stylesheet" href="styles/main.css">
+  <title>Charity Fuller | Web Developer</title>
 </head>
 
-<body>
-  <div class="background">
+<body data-spy="scroll" data-targer=".navbar">
 
-    <div class="nav">
-      <a class="a active" href="#">HOME</a>
-      <a class="b" href="#">ABOUT ME</a>
-      <a class="c" href="#">PROJECTS</a>
-      <a class="d" href="#">CONTACT ME</a>
-    </div>
-
-    <div class="content">
-      <div class="home">
-        <h1>I am Charity Fuller</h1>
-        <h3>Web Developer</h3>
-      </div>
-
-      <div class="aboutme">
+    <!--Navbar-->
+    <div id="header">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div class="container">
-          <p>I am Charity Fuller. I live in San Francisco Bay Area.
-            <img src="images/profile-pic.png"  alt="profile picture" />
-            <br>
-            <br>
-            I am a full-stack web developer dedicated to learning new technologies, welcoming challenges, collaboration,
-            and adapting well to change. I am seeking an opportunity where I can apply my creativity and technical abilities
-            in web development.
-          </p>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="#" class="navbar-brand"><h3>Portfolio</h3></a>
+          <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#aboutMe" class="nav-link">About Me</a></li>
+              <li class="nav-item"><a href="#projects" class="nav-link">My Projects</a></li>
+              <li class="nav-item"><a href="#connectWithMe" class="nav-link">Connect with Me</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--showCase-->
+    <div id="bg-img"></div>
+
+    <!--About Me-->
+    <div id="aboutMe">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div id="aboutData">
+              <div class="card bg-white">
+                <div class="card-title my-5">
+                  <div class="media">
+                    <img src="images/profile-pic.png" width="250" height="250" class="img-fluid rounded-top mx-5 d-none d-lg-block" alt="Profile Pic">
+                    <div class="media-body">
+                      <h4 class="display-4 ml-5">I'm Charity Fuller</h4>
+                      <p class="text-muted ml-5">Web Developer</p>
+                        <div class="container">
+                          <table class="table table-responsive ml-4">
+                            <tr>
+                              <td class="text-muted">Location</td>
+                              <td>:</td>
+                              <td>San Francisco Bay Area, CA</td>
+                            </tr>
+                            <tr>
+                              <td class="text-muted">Email</td>
+                              <td>:</td>
+                              <td>charryef@gmail.com</td>
+                            </tr>
+                            <tr>
+                              <td class="text-muted">Contact Number</td>
+                              <td>:</td>
+                              <td>1 650 451 8665</td>
+                            </tr>
+                            <tr>
+                              <td class="text-muted">Portfolio</td>
+                              <td>:</td>
+                              <td>https://charryef.github.io</td>
+                            </tr>
+                          </table>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer bg-secondary">
+                  <a href="https://www.linkedin.com/in/charity-fuller-b17300156/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-linkedin-square fa-2x mx-3"></i>
+                  </a>
+                  <a href="https://github.com/charryef" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-github-square fa-2x mx-3"></i>
+                  </a>
+                  <a href="mailto:charryef@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-envelope-square fa-2x mx-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="projects">
-        <div class="projectstitle">
-          <h1>My Specialization Projects</h1>
-          <h4>for my Full Stack Web Development Course at Bloc</h4>
-        </div>
-
-        <div class="project1">
-          <div class="image">
-            <a href="https://cfuller-blocitoff.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-              <img src="images/blocitoffScreenshot.jpg"  alt="project Blocitoff screenshot" />
-            </a>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col">
+            <span class="bg-secondary text-white">About Me</span><hr class="bg-secondary">
+            <p class="lead text-justify" style="color:#0c2461">I am a full-stack web developer dedicated to learning new technologies, welcoming challenges, collaboration, and adapting well to change. I am seeking an opportunity where I can apply my creativity and technical abilities in web development.</p>
           </div>
-          <h2>Blocitoff</h2>
-          <p><strong>Blocitoff</strong>, built with Ruby on Rails, is an application that allows users to keep their to-do lists manageable by
-            creating self-destructing ones. If the to-do item is not important enough to be completed in seven days, it gets automatically deleted.
-          </p>
-          <br>
-          <p><strong>Technologies:</strong> Ruby on Rails, Devise, Faker, Ajax, Bootstrap</p>
-          <br>
-          <p>Source code on:
-            <a href="https://github.com/charryef/blocitoff" target="_blank" rel="noopener noreferrer">
-              <strong><i>Github</i></strong>
-            </a>
-          </p>
         </div>
-
-        <div class="project2">
-          <div class="image">
-            <a href="https://cfuller-blocmarks.herokuapp.com" style="color:blue" target="_blank" rel="noopener noreferrer">
-              <img src="images/blocmarksScreenshot.jpg" alt="project Blocmarks screenshot" />
-            </a>
-          </div>
-          <h2>Blocmarks</h2>
-          <p><strong>Blocmarks</strong>, built with Ruby on Rails, is an application that allows users to bookmark URLs via email,
-            manage and share them with friends.
-          </p>
-          <br>
-          <p><strong>Technologies:</strong> Ruby on Rails, Devise, Mailgun, Bootstrap, Pundit</p>
-          <br>
-          <p>Source code on:
-            <a href="https://github.com/charryef/blocmarks" style="color:blue" target="_blank" rel="noopener noreferrer">
-              <strong><i>Github</i></strong>
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="contactme">
-        <h1>Charity Fuller</h1>
-        <hr>
-        <ul>
-          <li>
-            <a href="callto:16504518665" target="_blank">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-            </a>
-              <span class="title">Contact Number</span>
-              <span>1-650-451-8665</span>
-          </li>
-          <br>
-          <li>
-            <a href="mailto:charryef@gmail.com" target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-envelope-square" aria-hidden="true"></i>
-            </a>
-              <span class="title">Email Address</span>
-              <span>charryef@gmail.com</span>
-          </li>
-        </ul>
       </div>
     </div>
-  </div>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript">
+    <!--Projects-->
+    <div id="projects" class="mt-5">
+      <div class="container mt-5">
+        <span class="bg-info text-white">My Projects</span><hr class="bg-info">
+        <div class="row">
+          <div class="col lg-6">
+            <div class="card bg-white">
+              <img src="images/blocitoffScreenshot.jpg" width="300" height="150" class="img-fluid m-auto py-3" alt="Blocitoff Project">
+              <a href="https://cfuller-blocitoff.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <h3 class="ml-3 my-3 text-center text-info">Blocitoff</h3>
+              </a>
+              <p class="lead text-justify p-3">Blocitoff, built with Ruby on Rails, is an application that allows users to keep their to-do lists manageable by creating self-destructing ones. If the to-do item is not important enough to be completed in seven days, it gets automatically deleted
+                <br>
+                <br>
+                <strong>Technologies: </strong><i>Ruby on Rails, Devise, Faker, Ajax, Bootstrap</i>
+                <br>
+                <br>
+                <strong>Source code on: </strong>
+                <a href="https://github.com/charryef/blocitoff" target="_blank" rel="noopener noreferrer">Github</a>
+              </p>
+            </div>
+          </div>
+          <div class="col lg-6">
+            <div class="card bg-white">
+              <img src="images/blocmarksScreenshot.jpg" width="300" height="150" class="img-fluid m-auto py-3" alt="Blocmarks Project">
+              <a href="https://cfuller-blocmarks.herokuapp.com" style="color:blue" target="_blank" rel="noopener noreferrer">
+                <h3 class="ml-3 my-3 text-center text-info">Blocmarks</h3>
+              </a>
+              <p class="lead text-justify p-3">Blocmarks, built with Ruby on Rails, is an application that allows users to bookmark URLs via email, manage and share them with friends.
+                <br>
+                <br>
+                <strong>Technologies: </strong><i>Ruby on Rails, Devise, Mailgun, Bootstrap, Pundit</i>
+                <br>
+                <br>
+                <strong>Source code on: </strong>
+                <a href="https://github.com/charryef/blocmarks" target="_blank" rel="noopener noreferrer">Github</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    $(document).ready(function( ){
-      $('a').on('click', function(){
-        var selected = $(this);
-        $('a').removeClass('active');
-        $(selected).addClass('active');
-      });
+    <!--Connect with Me -->
+    <div id="connectWithMe">
+      <div class="container mt-5">
+        <span class="bg-info">Connect with Me</span><hr class="bg-info">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-white" style="width: 21.5em;margin:0 auto;">
+              <div class="card-body">
+                <h4 class="card-title" style="text-align:center">Charity Fuller</h4>
+                <br>
+                <ul style="text-align:left">
+                  <li>
+                    <a href="callto:16504518665" target="_blank">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                    </a>
+                      <span class="title">1 650 451 8665</span>
+                  </li>
+                  <br>
+                  <li>
+                    <a href="mailto:charryef@gmail.com" target="_blank" rel="noopener noreferrer">
+                      <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                    </a>
+                      <span class="title">charryef@gmail.com</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      var $a = $('.a'),
-      $b = $('.b'),
-      $c = $('.c'),
-      $d = $('.d'),
-      $home = $('.home'),
-      $aboutme = $('.aboutme'),
-      $projects = $('.projects'),
-      $contactme = $('.contactme');
+    <!--footer-->
+    <div id="footer">
+      <div class="container-fluid bg-dark">
+        <div class="row">
+          <div class="col">
+            <div class="container">
+              <div class="pt-3 text-center">
+                <a href="https://www.linkedin.com/in/charity-fuller-b17300156/" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-linkedin-square fa-2x mx-3"></i>
+                </a>
+                <a href="https://github.com/charryef" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-github-square fa-2x mx-3"></i>
+                </a>
+                <a href="mailto:charryef@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-envelope-square fa-2x mx-3"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 
-      $a.on('click', function(){
-        $home.fadeIn();
-        $aboutme.fadeOut();
-        $projects.fadeOut();
-        $contactme.fadeOut();
-      });
-      $b.on('click', function(){
-        $aboutme.fadeIn();
-        $home.fadeOut();
-        $projects.fadeOut();
-        $contactme.fadeOut();
-      });
-      $c.on('click', function(){
-        $projects.fadeIn();
-        $home.fadeOut();
-        $aboutme.fadeOut();
-        $contactme.fadeOut();
-      });
-      $d.on('click', function(){
-        $contactme.fadeIn();
-        $home.fadeOut();
-        $aboutme.fadeOut();
-        $projects.fadeOut();
-      });
-    });
+  <!-- To display list items in the Bootstrap navbar -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 
-  </script>
-  <footer>
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com/in/charity-fuller-b17300156/" target="_blank" rel="noopener noreferrer">
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/charryef" target="_blank" rel="noopener noreferrer">
-          <i class="fa fa-github-square" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a href="mailto:charryef@gmail.com" target="_blank" rel="noopener noreferrer">
-          <i class="fa fa-envelope-square" aria-hidden="true"></i>
-        </a>
-      </li>
-    </ul>
-  </footer>
-</body>
 </html>
